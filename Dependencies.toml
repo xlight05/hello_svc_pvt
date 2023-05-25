@@ -8,19 +8,6 @@ dependencies-toml-version = "2"
 distribution-version = "2201.5.0"
 
 [[package]]
-org = "anjana"
-name = "hello_svc_pvt"
-version = "0.1.0"
-dependencies = [
-	{org = "ballerina", name = "http"},
-	{org = "ballerinacentral", name = "bala_parser"},
-	{org = "ballerinai", name = "observe"}
-]
-modules = [
-	{org = "anjana", packageName = "hello_svc_pvt", moduleName = "hello_svc_pvt"}
-]
-
-[[package]]
 org = "ballerina"
 name = "auth"
 version = "2.7.0"
@@ -294,42 +281,28 @@ dependencies = [
 ]
 
 [[package]]
-org = "ballerina"
-name = "uuid"
-version = "1.5.0"
-dependencies = [
-	{org = "ballerina", name = "crypto"},
-	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "lang.int"},
-	{org = "ballerina", name = "regex"},
-	{org = "ballerina", name = "time"}
-]
-
-[[package]]
 org = "ballerinacentral"
-name = "bala_parser"
-version = "3.5.0"
+name = "hello_svc_pvt"
+version = "0.1.0"
 dependencies = [
-	{org = "ballerina", name = "file"},
-	{org = "ballerina", name = "io"},
-	{org = "ballerina", name = "log"},
-	{org = "ballerina", name = "regex"},
-	{org = "ballerina", name = "uuid"},
-	{org = "ballerinacentral", name = "zip"},
+	{org = "ballerina", name = "http"},
+	{org = "ballerinacentral", name = "test_pvt_util"},
 	{org = "ballerinai", name = "observe"}
 ]
 modules = [
-	{org = "ballerinacentral", packageName = "bala_parser", moduleName = "bala_parser"}
+	{org = "ballerinacentral", packageName = "hello_svc_pvt", moduleName = "hello_svc_pvt"}
 ]
 
 [[package]]
 org = "ballerinacentral"
-name = "zip"
-version = "3.5.0"
+name = "test_pvt_util"
+version = "0.1.0"
 dependencies = [
-	{org = "ballerina", name = "file"},
-	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "io"},
 	{org = "ballerinai", name = "observe"}
+]
+modules = [
+	{org = "ballerinacentral", packageName = "test_pvt_util", moduleName = "test_pvt_util"}
 ]
 
 [[package]]
